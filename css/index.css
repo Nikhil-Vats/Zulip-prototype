@@ -3040,6 +3040,9 @@ nav ul li.active::after {
    }
     nav ul.show {
         transform: translate(0px, 0px);
+        background: #11998e;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #69b692, #689692);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #69b692, #689692); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */  
    }
     nav .content > ul.show {
         outline-color: rgba(32, 62, 80, 0.7);
@@ -3063,7 +3066,7 @@ nav ul li.active::after {
         line-height: 1.5;
    }
     nav ul li, nav ul li a, .portico-header .dropdown-pill .realm-name {
-        color: #454545 !important;
+        color: whitesmoke !important;
    }
     nav ul li.active::after {
         content: ">";

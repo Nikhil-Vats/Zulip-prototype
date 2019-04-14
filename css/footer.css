@@ -257,7 +257,7 @@ nav ul li {
     display: inline-block;
     margin: 10px;
     color: #fff;
-    opacity: 0.7;
+    opacity: 1;
     transition: all 0.2s ease;
 }
 nav li a, nav li a:hover, nav li a:visited {
@@ -3018,7 +3018,7 @@ nav ul li.active::after {
         height: 40px;
         font-size: 1.5rem;
         text-align: right;
-        color: #454545;
+        color: whitesmoke;
         background-size: 40px auto;
         background-image: url(../assets/zulip-logo.svg);
         background-repeat: no-repeat;
@@ -3056,6 +3056,9 @@ nav ul li.active::after {
         font-weight: 100;
         font-size: 3em;
         color: initial;
+        background: white;
+        padding: 10px;
+        border-radius: 100%;
    }
     nav ul li:first-of-type {
         margin-top: 20px;
@@ -3063,11 +3066,11 @@ nav ul li.active::after {
     nav ul li {
         display: block;
         font-size: 1.5em;
-        font-weight: 300;
+        font-weight: 100;
         line-height: 1.5;
    }
     nav ul li, nav ul li a, .portico-header .dropdown-pill .realm-name {
-        color: #454545 !important;
+        color: whitesmoke !important;
    }
     nav ul li.active::after {
         content: ">";
