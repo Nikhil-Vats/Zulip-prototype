@@ -3049,7 +3049,11 @@ nav ul li.active::after {
         outline-color: rgba(32, 62, 80, 0.7);
    }
     nav ul .exit {
-        display: block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 45px;
+        height: 45px;
         position: absolute;
         top: 10px;
         right: 25px;
@@ -3057,7 +3061,6 @@ nav ul li.active::after {
         font-size: 3em;
         color: initial;
         background: white;
-        padding: 10px;
         border-radius: 100%;
    }
     nav ul li:first-of-type {
