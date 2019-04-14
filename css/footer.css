@@ -3053,13 +3053,13 @@ nav ul li.active::after {
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 45px;
-        height: 45px;
+        width: 40px;
+        height: 40px;
         position: absolute;
         top: 20px;
         right: 25px;
         font-weight: 100;
-        font-size: 3em;
+        font-size: 2.3em;
         color: initial;
         background: white;
         border-radius: 100%;
