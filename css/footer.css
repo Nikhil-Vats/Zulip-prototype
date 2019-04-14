@@ -3052,7 +3052,7 @@ nav ul li.active::after {
     nav ul .exit {
         display: flex;
         justify-content: center;
-        align-items: flex-start;
+        align-items: center;
         width: 45px;
         height: 45px;
         position: absolute;
