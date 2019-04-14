@@ -3075,6 +3075,9 @@ nav ul li.active::after {
     nav ul li, nav ul li a, .portico-header .dropdown-pill .realm-name {
         color: whitesmoke !important;
    }
+   nav ul li a.active {
+        color: #6cfff5 !important;
+   }
     nav ul li.active::after {
         content: ">";
         color: #6cfff5 !important;
