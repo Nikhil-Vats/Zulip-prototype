@@ -256,7 +256,7 @@ nav ul li {
     display: inline-block;
     margin: 10px;
     color: #fff;
-    opacity: 0.7;
+    opacity: 1;
     transition: all 0.2s ease;
 }
 nav li a, nav li a:hover, nav li a:visited {
@@ -266,6 +266,7 @@ nav li a, nav li a:hover, nav li a:visited {
 }
 nav ul li.active, nav ul li:hover {
     opacity: 1;
+    color: #6cfff5 !important;
 }
 nav ul li.active::after {
     content: "v";
@@ -3068,7 +3069,7 @@ nav ul li.active::after {
     nav ul li {
         display: block;
         font-size: 1.5em;
-        font-weight: 300;
+        font-weight: 100;
         line-height: 1.5;
    }
     nav ul li, nav ul li a, .portico-header .dropdown-pill .realm-name {
@@ -3076,6 +3077,7 @@ nav ul li.active::after {
    }
     nav ul li.active::after {
         content: ">";
+        color: #6cfff5 !important;
         transform: scale(1, 1);
         bottom: auto;
         left: -25px;

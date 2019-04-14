@@ -267,6 +267,7 @@ nav li a, nav li a:hover, nav li a:visited {
 }
 nav ul li.active, nav ul li:hover {
     opacity: 1;
+    color: #6cfff5 !important;
 }
 nav ul li.active::after {
     content: "v";
@@ -3077,6 +3078,7 @@ nav ul li.active::after {
    }
     nav ul li.active::after {
         content: ">";
+        color: #6cfff5 !important;
         transform: scale(1, 1);
         bottom: auto;
         left: -25px;
