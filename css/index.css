@@ -256,7 +256,7 @@ nav ul li {
     display: inline-block;
     margin: 10px;
     color: #fff;
-    opacity: 1;
+    opacity: 0.7;
     transition: all 0.2s ease;
 }
 nav li a, nav li a:hover, nav li a:visited {
@@ -266,7 +266,7 @@ nav li a, nav li a:hover, nav li a:visited {
 }
 nav ul li.active, nav ul li:hover {
     opacity: 1;
-    color: #6cfff5 !important;
+    color: #fff !important;
 }
 nav ul li.active::after {
     content: "v";
@@ -2552,7 +2552,8 @@ nav ul li.active::after {
    }
     nav .logo {
         float: none;
-        display: block;
+        display: flex;
+        align-items: center;
         margin: 0 auto;
         text-align: center;
    }
@@ -3005,9 +3006,9 @@ nav ul li.active::after {
         display: inline-block;
         float: right;
    }
-    .portico-header .content > ul::before {
-        content: "Zulip";
-        display: block;
+    .sidenav-logo {
+        display: none;
+        align-items: center;
         margin-top: 20px;
         padding-top: 5px;
         margin-left: 10px;
@@ -3015,11 +3016,15 @@ nav ul li.active::after {
         height: 40px;
         font-size: 1.5rem;
         text-align: right;
-        color: #454545;
-        background-size: 40px auto;
-        background-image: url(assets/zulip-logo.svg);
-        background-repeat: no-repeat;
+        color: white;
    }
+
+   .sidenav-logo svg {
+       width: 40px;
+       height: 40px;
+       margin-right: 10px;
+   }
+
     .portico-header .dropdown ul {
         width: 100%;
         height: auto;
@@ -3042,8 +3047,8 @@ nav ul li.active::after {
     nav ul.show {
         transform: translate(0px, 0px);
         background: #11998e;  /* fallback for old browsers */
-        background: -webkit-linear-gradient(to right, #69b692, #689692);  /* Chrome 10-25, Safari 5.1-6 */
-        background: linear-gradient(to right, #69b692, #689692); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */  
+        background: -webkit-linear-gradient(to right, #4f9b97, #5195aa);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #4f9b97, #5195aa); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */  
    }
     nav .content > ul.show {
         outline-color: rgba(32, 62, 80, 0.7);
@@ -3052,8 +3057,8 @@ nav ul li.active::after {
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 40px;
-        height: 40px;
+        width: 35px;
+        height: 35px;
         position: absolute;
         top: 20px;
         right: 25px;
@@ -3076,11 +3081,11 @@ nav ul li.active::after {
         color: whitesmoke !important;
    }
    nav ul li a.active {
-        color: #6cfff5 !important;
+        color: #fff !important;
    }
     nav ul li.active::after {
         content: ">";
-        color: #6cfff5 !important;
+        color: #fff !important;
         transform: scale(1, 1);
         bottom: auto;
         left: -25px;

@@ -257,7 +257,7 @@ nav ul li {
     display: inline-block;
     margin: 10px;
     color: #fff;
-    opacity: 1;
+    opacity: 0.7;
     transition: all 0.2s ease;
 }
 nav li a, nav li a:hover, nav li a:visited {
@@ -267,7 +267,7 @@ nav li a, nav li a:hover, nav li a:visited {
 }
 nav ul li.active, nav ul li:hover {
     opacity: 1;
-    color: #6cfff5 !important;
+    color: #fff !important;
 }
 nav ul li.active::after {
     content: "v";
@@ -2553,7 +2553,8 @@ nav ul li.active::after {
    }
     nav .logo {
         float: none;
-        display: block;
+        display: flex;
+        align-items: center;
         margin: 0 auto;
         text-align: center;
    }
@@ -3009,21 +3010,7 @@ nav ul li.active::after {
         display: inline-block;
         float: right;
    }
-    .portico-header .content > ul::before {
-        content: "Zulip";
-        display: block;
-        margin-top: 20px;
-        padding-top: 5px;
-        margin-left: 10px;
-        width: 100px;
-        height: 40px;
-        font-size: 1.5rem;
-        text-align: right;
-        color: whitesmoke;
-        background-size: 40px auto;
-        background-image: url(../assets/zulip-logo.svg);
-        background-repeat: no-repeat;
-   }
+
     .portico-header .dropdown ul {
         width: 100%;
         height: auto;
@@ -3053,8 +3040,8 @@ nav ul li.active::after {
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 40px;
-        height: 40px;
+        width: 35px;
+        height: 35px;
         position: absolute;
         top: 20px;
         right: 25px;
@@ -3067,6 +3054,24 @@ nav ul li.active::after {
     nav ul li:first-of-type {
         margin-top: 20px;
    }
+   .sidenav-logo {
+    display: none;
+    align-items: center;
+    margin-top: 20px;
+    padding-top: 5px;
+    margin-left: 10px;
+    width: 100px;
+    height: 40px;
+    font-size: 1.5rem;
+    text-align: right;
+    color: white;
+    }
+
+    .sidenav-logo svg {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    }
     nav ul li {
         display: block;
         font-size: 1.5em;
@@ -3078,7 +3083,7 @@ nav ul li.active::after {
    }
     nav ul li.active::after {
         content: ">";
-        color: #6cfff5 !important;
+        color: #fff !important;
         transform: scale(1, 1);
         bottom: auto;
         left: -25px;
